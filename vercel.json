@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "express",
+  "installCommand": "npm install",
+  "analytics": true
+}
