@@ -1,8 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const { ethers } = require('ethers');
+const { inject } = require('@vercel/analytics');
 
 const app = express();
+
+// Initialize Vercel Web Analytics (runs in client-side script, but we set it up here)
+// Note: Analytics tracking for page views and custom events works via the injected script
+inject();
 const PORT = process.env.PORT || 3000;
 
 const RPC_URL = process.env.ALCHEMY_RPC_URL; // Ej: 'https://polygon-mainnet.g.alchemy.com/v2/TU_KEY'

@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^1.4.0",
     "dotenv": "^17.2.3",
     "ethers": "^6.16.0",
     "express": "^5.2.1"
